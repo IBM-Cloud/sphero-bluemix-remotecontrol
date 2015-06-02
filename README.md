@@ -23,7 +23,7 @@ The web application is a Node.js application which uses the [IBM Internet of Thi
 
 4. Download the application and change to that directory. Run "npm install".
 
-5. Modify the file [public/drive/js/main.js]((https://raw.githubusercontent.com/IBM-Bluemix/sphero-bluemix-remotecontrol/master/images/webappcredentials.png)). Replace the text in the screenshot with your org id, appKey and appToken from the previous step. Note that in a real production application you should not put the credentials in the JavaScript file.
+5. Modify the file [public/drive/js/main.js](https://raw.githubusercontent.com/IBM-Bluemix/sphero-bluemix-remotecontrol/master/images/webappcredentials.png)). Replace the text in the screenshot with your org id, appKey and appToken from the previous step. Note that in a real production application you should not put the credentials in the JavaScript file.
 
 6. Edit the manifest file and change the application name to the name that you chose in the third step above, e.g. ibm-chariot-nik.
 
