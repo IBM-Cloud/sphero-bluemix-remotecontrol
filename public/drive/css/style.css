@@ -1,0 +1,112 @@
+html * {
+	font-size: 20px;
+	font-family: HelveticaNeue-Light, sans-serif;
+}
+
+#topContainer {
+	text-align: left;
+	display: block;
+	width: 550px;
+	height: 300px;
+	position: relative;
+}
+
+#bottomContainer {
+	position: relative;
+}
+
+#map {
+	width: 256px;
+	height: 256px;
+	position: absolute;
+	left: 0;
+	border: 1px solid black;
+	box-shadow: 2px 2px 16px #aaa;
+	-webkit-box-shadow: 2px 2px 16px #aaa;
+}
+#reset {
+	position: absolute;
+	left: 78px;
+	top: 210px;
+}
+#view {
+	border: 1px solid black;
+	width: 256px;
+	height: 256px;
+	position: absolute;
+	right: 0;
+	box-shadow: 2px 2px 16px #aaa;
+	-webkit-box-shadow: 2px 2px 16px #aaa;
+}
+#picture {
+	width: 256px;
+	height: 256px;
+}
+#swatch {
+	display: inline-block;
+	width: 25px;
+	margin-left: 10px;
+	line-height: 25px;
+	background: red;
+	border: 1px solid black;
+	box-shadow: 2px 2px 8px #aaa;
+	-webkit-box-shadow: 2px 2px 8px #aaa;
+}
+#speedSlider {
+	display: inline-block;
+	width: 250px;
+	vertical-align: middle;
+}
+#pickerSlider {
+	display: inline-block;
+	width: 250px;
+	vertical-align: middle;
+}
+#pickerSlider .slider-track {
+	background: -moz-linear-gradient(left, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+	background: -ms-linear-gradient(left, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+	background: -o-linear-gradient(left, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+	background: -webkit-gradient(linear, left top, right bottom, from(#ff0000), color-stop(0.17, #ffff00), color-stop(0.33, #00ff00), color-stop(0.5, #00ffff), color-stop(0.67, #0000ff), color-stop(0.83, #ff00ff), to(#ff0000));
+	background: -webkit-linear-gradient(left, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+	background: linear-gradient(to right, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+}
+#pickerSlider .slider-selection {
+	background: rgba(0,0,0,0.0);
+}
+.touchButton {
+	-webkit-user-select: none;
+	margin: 5px 0;
+	border: solid 1px #aaa;
+	cursor: pointer;
+	background-color: white;
+	color: black;
+}
+.udTouchButton {
+	padding: 20px 65px;
+}
+.lrTouchButton {
+	padding: 60px 25px;
+}
+.selectedTouchButton {
+	background-color: black;
+	color: white;
+}
+#controls {
+	text-align: middle;
+}
+#controls > * {
+	vertical-align: middle;
+}
+.slider.slider-horizontal {
+	margin-bottom: 3px;
+}
+.slider.slider-horizontal .slider-handle {
+	margin-top: -10px;
+	margin-left: 0;
+}
+.slider-handle {
+	width: 5px;
+	height: 30px;
+	border-radius:0;
+	opacity: 1.0;
+}

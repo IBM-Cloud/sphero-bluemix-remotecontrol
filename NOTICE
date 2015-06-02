@@ -1,0 +1,39 @@
+sphero-bluemix-remotecontrol
+
+https://github.com/IBM-Bluemix/sphero-bluemix-remotecontrol
+
+Copyright IBM Corp. 2015
+
+
+
+bootstrap.min.js 3.3.3
+http://getbootstrap.com
+Licensed under MIT: https://github.com/twbs/bootstrap/blob/master/LICENSE
+
+bootstrap-colorpicker.min.js
+https://github.com/mjolnic/bootstrap-colorpicker
+Licensed under ALv2: https://github.com/mjolnic/bootstrap-colorpicker/blob/master/LICENSE
+
+bootstrap-slider.min.js
+https://github.com/seiyria/bootstrap-slider
+Licensed under MIT: https://github.com/seiyria/bootstrap-slider/blob/master/LICENSE.md
+
+fastclick.js
+https://github.com/ftlabs/fastclick
+Licensed under MIT: https://github.com/ftlabs/fastclick/blob/master/LICENSE
+
+jquery.js 1.11.1
+http://jquery.com/
+Licensed under MIT: http://jquery.org/license
+
+Eclipse Paho JavaScript Client
+https://www.eclipse.org/paho/clients/js/
+Available under Eclipse Public License https://www.eclipse.org/org/documents/epl-v10.php
+
+Font Awesome
+http://fortawesome.github.io/Font-Awesome/3.2.1/get-started/
+Licensed under MIT: http://fortawesome.github.io/Font-Awesome/3.2.1/license/
+
+
+The following Node.js packages are used but not included:
+express, mqtt, domain, http, streamifier

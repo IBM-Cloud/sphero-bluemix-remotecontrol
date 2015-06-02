@@ -1,0 +1,16 @@
+{
+	"name": "Sample",
+	"version": "0.0.1",
+	"description": "Sample",
+	"dependencies": {
+		"express": "3.4.7",
+		"mqtt": "*",
+		"domain": "*",
+		"http": "*",
+		"streamifier": "*"
+	},
+	"engines": {
+		"node": "0.10.26"
+	},
+	"repository": {}
+}

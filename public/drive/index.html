@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<meta name="viewport" content = "width = device-width, initial-scale = 1, user-scalable = no" />
+		<title>IBM Chariot</title>
+		<link rel="stylesheet" href="css/utils/bootstrap.min.css"> 
+		<link rel="stylesheet" href="css/utils/bootstrap-colorpicker.min.css"> 
+		<link rel="stylesheet" href="css/utils/bootstrap-slider.min.css"> 
+		<link rel="stylesheet" href="css/utils/font-awesome.min.css"> 
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<center>
+			<div id="topContainer">
+				<div id="map">
+					<center>
+						<h3 style="margin-top: 37px">Select a Chariot</h3>
+						<div style="margin: 20px">
+							<select class="form-control" style="width: 80%" id="chariotSelect">
+								<option value="">Choose...</option>
+							</select>
+						</div>
+                        <!--
+						<div>
+							<button class="btn btn-lg btn-default" id="startTripButton">Start Trip</button>
+							<button class="btn btn-lg btn-default" id="stopTripButton" disabled>End Trip</button>
+						</div>
+						<h3 id="scoreDisplay" style="display: none">Score: <span style="font-weight: bold;" id="scoreValue">&mdash;</span></h3>-->
+					</center>
+					<!--svg id="mapSvg" height="256" width="256">
+						<line class="xaxis" stroke="#ccc" stroke-width="2" />
+						<line class="yaxis" stroke="#ccc" stroke-width="2" />
+						<circle class="positionCursor" r="4" stroke="red" fill="red" />
+						<rect class="boundingRect" x="0" y="0" stroke-width="2" stroke="black" fill="none" />
+					</svg>
+					<button id="reset" class="btn">Reset Origin</button-->
+				</div>
+				<div id="view">
+					<img id="picture"></img>
+				</div>
+			</div>
+			<div id="bottomContainer">
+				<div id="controls">
+					<div style="display: inline-block; width: 180px;">
+						<div><i id="driveButton" class="touchButton udTouchButton fa fa-arrow-up fa-2x"></i></div>
+						<div><i id="reverseButton" class="touchButton udTouchButton fa fa-arrow-down fa-2x"></i></div>
+					</div>
+					<div style="display: inline-block; width: 180px;">
+						<svg id="cursorSvg" height="150" width="150">
+							<circle id="headingCircle" cx="75" cy="75" r="70" stroke="black" stroke-width="2" fill="none" />
+							<circle id="headingCursor" cx="75" cy="5" r="5" stroke="red" fill="red" />
+							<line x1="70" x2="80" y1="75" y2="75" stroke="#aaa" stroke-width="2" />
+							<line x1="75" x2="75" y1="70" y2="80" stroke="#aaa" stroke-width="2" />
+							<line id="velocityLine1" x1="75" x2="75" y1="75" y2="5" stroke="rgba(0,0,0,0.2)" stroke-width="2" />
+							<line id="velocityLine2" x1="75" x2="75" y1="75" y2="75" stroke="red" stroke-width="4" />
+						</svg>
+					</div>
+					<div style="display: inline-block; width: 180px;">
+						<div style="display: inline-block"><i id="leftButton" class="touchButton lrTouchButton fa fa-arrow-left fa-2x"></i></div>
+						<div style="display: inline-block"><i id="rightButton" class="touchButton lrTouchButton fa fa-arrow-right fa-2x"></i></div>
+					</div>
+				</div>
+				<div id="settings">
+					<div style="display: inline-block">
+						<div style="line-height: 50px;">
+							<div style="width: 200px; display: inline-block"><span>Power: <span id="speed">50%</span></span></div>
+							<div style="display: inline-block"><input id="speedSlider" data-slider-id="speedSlider" type="text" data-slider-min="0" data-slider-max="1" data-slider-step="0.01" data-slider-value="0.5" /></div>
+						</div>
+						<div style="line-height: 50px;">
+							<div style="width: 200px; display: inline-block"><span>Color: <div id="swatch">&nbsp;</div></span></div>
+							<div style="display: inline-block"><input id="picker" data-slider-id="pickerSlider" type="text" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="0" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</center>
+	</body>
+	<script type="text/javascript" src="js/utils/fastclick.js"></script>
+	<script type="text/javascript" src="js/utils/jquery.js"></script>
+	<script type="text/javascript" src="js/utils/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/utils/bootstrap-colorpicker.min.js"></script>
+	<script type="text/javascript" src="js/utils/bootstrap-slider.min.js"></script>
+	<script type="text/javascript" src="js/utils/mqttws31.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</html>
