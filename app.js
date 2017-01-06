@@ -725,7 +725,7 @@ function updateAggregateData(aggData) {
 // The IP address of the Cloud Foundry DEA (Droplet Execution Agent) that hosts this application:
 var host = (process.env.VCAP_APP_HOST || 'localhost');
 // The port on the DEA for communication with the application:
-var port = (process.env.VCAP_APP_PORT || 3001);
+var port = (process.env.PORT || 3001);
 // Start server
 app.listen(port, host);
 console.log('App started on port ' + port);
